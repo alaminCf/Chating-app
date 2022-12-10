@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sing_in_Activity"
+    android:background="#8FC1D1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="100dp">
+
+            <com.appbroker.roundedimageview.RoundedImageView
+                android:id="@+id/roundedImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher_foreground"
+                app:radius="20dp"/>
+
+            <TextView
+                android:id="@+id/topText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="32dp"
+                android:fontFamily="@font/alice"
+                android:text="User Login"
+                android:textColor="@color/logo_bg"
+                android:textSize="28sp" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="email / Phone"
+                android:textColorHint="@color/logo_bg"
+                app:endIconMode="clear_text" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="password"
+                android:textColorHint="@color/logo_bg"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:inputType="textWebPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/create_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create An Account"
+                android:layout_gravity="end"
+                android:layout_marginRight="12dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/logo_imoji"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"
+                android:text="Log in"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_google"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_google"
+                    android:includeFontPadding="false"
+                    android:text="Google"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:drawableLeft="@drawable/ggl"
+                    android:textColor="@color/black"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_fb"
+                    android:layout_width="120dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_fb"
+                    android:includeFontPadding="false"
+                    android:text="Facebook"
+                    android:drawableLeft="@drawable/fb"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/phone_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register With Phone"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

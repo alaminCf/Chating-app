@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "686394253708",
+    "project_id": "soft-chaat",
+    "storage_bucket": "soft-chaat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686394253708:android:6ce9f28fa5a9bfec8c36a9",
+        "android_client_info": {
+          "package_name": "com.softaloy.softchaat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686394253708-8a4tdu4ggbf8oqquon5bunffd023lv6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvfBZrTqviuyuYppgMraTaivHcQLnlQGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686394253708-8a4tdu4ggbf8oqquon5bunffd023lv6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

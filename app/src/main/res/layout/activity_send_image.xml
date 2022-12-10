@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:background="@color/theme_bg"
+    tools:context=".Send_Image_Activity">
+
+    <ImageView
+        android:id="@+id/iv_send_img"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_send_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Image"
+        android:textSize="20sp"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:background="@color/logo_bg"
+        android:textColor="@color/white"
+        android:padding="13dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_dont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't press back button until it's upload"
+        android:layout_gravity="center"
+        android:textColor="@color/logo_bg"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/pb_send_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+</LinearLayout>
